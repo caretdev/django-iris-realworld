@@ -5,22 +5,17 @@ An in-depth discussion of this implementation can be found [here](https://danjac
 
 Tech Stack:
 
+* [InterSystems IRIS](https://www.intersystems.com/products/intersystems-iris/)
 * [Django](https://djangoproject.com)
 * [HTMX](https://htmx.org)
 * [Alpine](https://alpinejs.dev)
 
-To install and run locally:
+To install and run with docker-compose (requires iris.key placed in the home directory):
 
 ```bash
-git clone https://github.com/danjac/realworld/ && cd realworld
+git clone https://github.com/caretdev/django-iris-realworld/ && cd realworld
 
-python -m venv venv
-
-source venv/bin/activate
-
-pip install -r requirements.txt
-
-./manage.py migrate && ./manage.py runserver
+docker-compose up -d --build
 ```
 
 
