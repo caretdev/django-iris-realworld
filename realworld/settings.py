@@ -82,8 +82,12 @@ WSGI_APPLICATION = "realworld.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django_iris",
+        "NAME": "USER",
+        "HOST": "localhost",
+        "PORT": 1972,
+        "USER": "django",
+        "PASSWORD": "django",
     }
 }
 
@@ -116,7 +120,7 @@ TIME_ZONE = "UTC"
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

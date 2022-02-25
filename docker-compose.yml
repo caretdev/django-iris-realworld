@@ -1,0 +1,14 @@
+version: '3'
+services:
+  iris:
+    build: .
+    ports:
+      - 8002:1972
+      - 8001:52773
+      - 8000:8000
+    volumes:
+      - ./:/home/irisowner/django-realworld/
+      - ~/iris.key:/usr/irissys/mgr/iris.key
+    command: 
+      - -a
+      - iris session iris -U%SYS '##class(Security.Users).UnExpireUserPasswords("*")'
