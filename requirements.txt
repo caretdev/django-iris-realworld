@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/intersystems-community/iris-driver-distribution/main/intersystems_irispython-3.2.0-py3-none-any.whl
+https://raw.githubusercontent.com/intersystems-community/iris-driver-distribution/main/DB-API/intersystems_irispython-3.2.0-py3-none-any.whl
 django==4.0.1
 django-htmx===1.8.0
 django-widget-tweaks==1.4.12
