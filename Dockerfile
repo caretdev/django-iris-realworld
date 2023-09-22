@@ -1,4 +1,4 @@
-FROM containers.intersystems.com/intersystems/iris:2022.1.0.114.0
+FROM intersystemsdc/iris-community
 
 EXPOSE 8000
 
